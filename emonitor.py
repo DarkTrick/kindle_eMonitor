@@ -1,11 +1,10 @@
 #!/usr/bin/python
 #eMonitor by Kranu
 #modified by DarkTrick
-#Version 2 (9-1-2011)
+#Version 3
 
-#Tested on Windows 7 x64, Python 2.7.2
-#Tested on Ubuntu 19.04, Python 2.7.16
-#For more information, see: http://goo.gl/rJoLp
+#Tested on Ubuntu 21.14, Python 3.9
+
 
 #BEGIN SETUP
 

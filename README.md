@@ -18,9 +18,10 @@ This is a Python script that starts a webserver, that provides a page, which mir
 
 # Dependencies
 
+- Python3
 - Gtk
-  - Windows: `python3 -m pip install pygtk`
-  - Ubuntu: `sudo apt install python3 python3-gi`
+  - Windows: `python3 -m pip install pygtk` (?)
+  - Ubuntu: `sudo apt install python3 python3-gi` (?)
 - Kindle and computer must be on the same network
 
 # Security
