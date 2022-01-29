@@ -106,25 +106,25 @@ class serv(BaseHTTPRequestHandler):
     else:
       self.deliverSite()
 
-    try:
-      print( 'eMonitor by Kranu')
+try:
+  print( 'eMonitor by Kranu')
 
-      #Amazon's website is used here for its reliablity. Feel free to change it.
-      s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-      s.connect(("amazon.com",80))
+  #Amazon's website is used here for its reliablity. Feel free to change it.
+  s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+  s.connect(("amazon.com",80))
 
-      print ('Starting.. '),
-      server=HTTPServer(('',port),serv)
-      print ('Press Ctrl+C to stop')
-      print ("")
+  print ('Starting.. '),
+  server=HTTPServer(('',port),serv)
+  print ('Press Ctrl+C to stop')
+  print ("")
 
-      print ('On your Kindle, visit http://'+s.getsockname()[0]+':'+str(port)+'/')
+  print ('On your Kindle, visit http://'+s.getsockname()[0]+':'+str(port)+'/')
 
-      # take initial screenshot
-      gtkScreenshot()
+  # take initial screenshot
+  gtkScreenshot()
 
 
-      server.serve_forever()
-    except KeyboardInterrupt:
-      print ('Stopping.. '),
-      server.socket.close()
+  server.serve_forever()
+except KeyboardInterrupt:
+  print ('Stopping.. '),
+  server.socket.close()
